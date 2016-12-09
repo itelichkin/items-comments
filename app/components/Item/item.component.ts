@@ -3,7 +3,8 @@ import {Item} from "../../Models/item.model";
 @Component({
     moduleId: module.id,
     selector: 'item-app',
-    templateUrl: 'item.component.html'
+    templateUrl: 'item.component.html',
+    styleUrls:['item.component.css']
 })
 
 export class ItemComponent {

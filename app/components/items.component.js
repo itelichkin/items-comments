@@ -16,7 +16,8 @@ var ItemsComponent = (function () {
         core_1.Component({
             moduleId: module.id,
             selector: 'items-app',
-            templateUrl: 'items.component.html'
+            templateUrl: 'items.component.html',
+            styleUrls: ['items.component.css']
         }), 
         __metadata('design:paramtypes', [])
     ], ItemsComponent);

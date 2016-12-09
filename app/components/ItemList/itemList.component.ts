@@ -8,7 +8,8 @@ import {Item} from "../../Models/item.model";
 @Component({
     moduleId: module.id,
     selector: 'item-list',
-    templateUrl: 'itemList.component.html'
+    templateUrl: 'itemList.component.html',
+    styleUrls:['itemList.component.css']
 })
 
 export class ItemsListComponent implements OnInit {

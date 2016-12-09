@@ -1,16 +1,19 @@
-<h1>Items</h1>
-<form class="todo-form" (ngSubmit)="addItem()" >
-    <input type="text" name='title' [(ngModel)]="newItemTitle" placeholder="Write item's name" required>
-    <button type="submit">Add item</button>
+<section id="allItems">
+    <h1>Items</h1>
+    <form class="todo-form" (ngSubmit)="addItem()">
+        <input type="text" name='title' [(ngModel)]="newItemTitle" placeholder="Write item's name" required>
+        <button type="submit">Add item</button>
 
-</form>
+    </form>
 
-<section class="todo-list">
-    <item-app *ngFor="let item of items" [item]="item" (deleted)="onItemDelete(item)" (click)="onSelect(item)" >
+    <div class="todo-list">
+        <item-app *ngFor="let item of items" [item]="item" (deleted)="onItemDelete(item)" (click)="onSelect(item)">
 
-    </item-app>
+        </item-app>
+    </div>
+
+
 </section>
-
-<section *ngIf="selectedItem">
+<section id="comments" *ngIf="selectedItem">
     <comment-list [selectedItem]="selectedItem"></comment-list>
 </section>

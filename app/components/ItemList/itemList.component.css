@@ -1,0 +1,32 @@
+h1{
+    font-weight: 400;
+}
+#allItems {
+    float: left;
+    width: 48%;
+    box-shadow: 3px 3px 5px lightgrey, -3px -3px 5px lightgrey, 3px -3px 5px lightgrey, -3px 3px 5px lightgrey;
+    margin-right: 20px;
+    padding: 30px 20px 20px 35px;
+}
+#allItems button {
+    background-color: #27CCC0;
+    color: white;
+    height: 30px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: inherit;
+    padding: 0 23px;
+    margin-left: 5px;
+}
+item-app {
+    display: flex;
+    margin-bottom: 15px;
+}
+item-app:first-child {
+    margin-top: 20px;
+}
+#comments {
+    float: left;
+    width: 48%;
+    box-shadow: 3px 3px 5px lightgrey, -3px -3px 5px lightgrey, 3px -3px 5px lightgrey, -3px 3px 5px lightgrey;
+}

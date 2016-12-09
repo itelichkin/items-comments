@@ -55,7 +55,8 @@ var ItemsListComponent = (function () {
         core_1.Component({
             moduleId: module.id,
             selector: 'item-list',
-            templateUrl: 'itemList.component.html'
+            templateUrl: 'itemList.component.html',
+            styleUrls: ['itemList.component.css']
         }), 
         __metadata('design:paramtypes', [mainService_component_1.MainServiceComponent])
     ], ItemsListComponent);
