@@ -1,17 +1,27 @@
 main {
     display: block;
+    min-height: 90%;
+    height: 90%;
 }
 #menu {
     float: left;
-    width: 30%;
+    width: 20%;
     height: 100%;
     background-color: #2B2F3E;
+
 }
-#menu ul li:active {
+#menu h1, #menu ul {
+    margin-left: 30px;
+}
+#menu ul li {
+margin-top: 50px;
+}
+/*#menu ul li {
     background-color: rgb(255,29,37);
-}
+}*/
 #menu ul li a {
     color: white;
+    text-decoration: none;
 }
 #menu ul li.selected {
     background-color: #BBD8DC !important;
@@ -21,4 +31,5 @@ main {
     float: left;
     width: 60%;
     height: 100%;
+    padding: 20px;
 }
