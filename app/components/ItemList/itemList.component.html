@@ -1,0 +1,16 @@
+<h1>Items</h1>
+<form class="todo-form" (ngSubmit)="addItem()" >
+    <input type="text" name='title' [(ngModel)]="newItemTitle" placeholder="Write item's name" required>
+    <button type="submit">Add item</button>
+
+</form>
+
+<section class="todo-list">
+    <item-app *ngFor="let item of items" [item]="item" (deleted)="onItemDelete(item)" (click)="onSelect(item)" >
+
+    </item-app>
+</section>
+
+<section *ngIf="selectedItem">
+    <comment-list [selectedItem]="selectedItem"></comment-list>
+</section>

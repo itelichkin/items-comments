@@ -1,0 +1,24 @@
+main {
+    display: block;
+}
+#menu {
+    float: left;
+    width: 30%;
+    height: 100%;
+    background-color: #2B2F3E;
+}
+#menu ul li:active {
+    background-color: rgb(255,29,37);
+}
+#menu ul li a {
+    color: white;
+}
+#menu ul li.selected {
+    background-color: #BBD8DC !important;
+    color: white;
+}
+#items {
+    float: left;
+    width: 60%;
+    height: 100%;
+}

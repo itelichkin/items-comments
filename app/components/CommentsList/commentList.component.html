@@ -1,0 +1,10 @@
+
+<form (ngSubmit)="addComment()" >
+    <input type="text" name='title' [(ngModel)]="newCommentTitle" placeholder="Write your comment" required>
+    <button type="submit">Add comment</button>
+
+</form>
+
+<div *ngFor="let elem of selectedItem.comments">
+    <div class="message">{{ elem.message }}</div>
+</div>
