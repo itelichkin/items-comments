@@ -1,7 +1,15 @@
-span {
+span.title {
     color: black;
+    cursor: pointer;
+}
+span.title {
+    padding-left: 30px;
 }
 
+span.title:hover{
+    border-left: 2px solid #FF2F5A;
+    padding-left: 28px;
+}
 
 button {
     border: 1px solid red;

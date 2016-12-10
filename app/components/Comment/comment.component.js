@@ -9,14 +9,20 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
+var comment_model_1 = require("../../Models/comment.model");
 var CommentComponent = (function () {
     function CommentComponent() {
     }
+    __decorate([
+        core_1.Input(), 
+        __metadata('design:type', comment_model_1.Comment)
+    ], CommentComponent.prototype, "elem", void 0);
     CommentComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
             selector: 'comment-app',
-            templateUrl: 'comment.component.html'
+            templateUrl: 'comment.component.html',
+            styleUrls: ['comment.component.css']
         }), 
         __metadata('design:paramtypes', [])
     ], CommentComponent);

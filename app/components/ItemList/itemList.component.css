@@ -1,12 +1,12 @@
-h1{
-    font-weight: 400;
+h1, form.item-form {
+    padding-left: 30px;
 }
 #allItems {
     float: left;
     width: 48%;
     box-shadow: 3px 3px 5px lightgrey, -3px -3px 5px lightgrey, 3px -3px 5px lightgrey, -3px 3px 5px lightgrey;
     margin-right: 20px;
-    padding: 30px 20px 20px 35px;
+    padding: 20px 30px 20px 0;
 }
 #allItems button {
     background-color: #27CCC0;
@@ -26,7 +26,13 @@ item-app:first-child {
     margin-top: 20px;
 }
 #comments {
+    height: 94vh;
+    overflow: auto;
     float: left;
     width: 48%;
     box-shadow: 3px 3px 5px lightgrey, -3px -3px 5px lightgrey, 3px -3px 5px lightgrey, -3px 3px 5px lightgrey;
+}
+comment-list {
+    display: block;
+    padding-bottom: 20px;
 }

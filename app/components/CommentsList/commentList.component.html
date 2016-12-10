@@ -1,10 +1,16 @@
+<h1>Comments</h1>
 
-<form (ngSubmit)="addComment()" >
-    <input type="text" name='title' [(ngModel)]="newCommentTitle" placeholder="Write your comment" required>
+<div class="comment">
+    <comment-app *ngFor="let elem of selectedItem.comments" [elem]="elem">
+
+    </comment-app>
+</div>
+
+<form (ngSubmit)="addOneComment()">
+    <div class="image">
+        <i class="image"></i>
+    </div>
+    <textarea name='title' [(ngModel)]="newCommentTitle" placeholder="Write your comment." required></textarea>
     <button type="submit">Add comment</button>
 
 </form>
-
-<div *ngFor="let elem of selectedItem.comments">
-    <div class="message">{{ elem.message }}</div>
-</div>

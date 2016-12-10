@@ -17,7 +17,7 @@ var CommentListComponent = (function () {
         this.mainService = mainService;
         this.newCommentTitle = '';
     }
-    CommentListComponent.prototype.addComment = function () {
+    CommentListComponent.prototype.addOneComment = function () {
         var _this = this;
         var comment = new comment_model_1.Comment(this.newCommentTitle);
         var item = this.selectedItem;

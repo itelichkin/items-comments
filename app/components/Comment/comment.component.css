@@ -1,0 +1,9 @@
+div.message {
+    float: left;
+    width: 80%;
+    padding-right: 30px;
+}
+p.message {
+    margin: 0;
+    font-size: 14px;
+}

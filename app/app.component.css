@@ -1,7 +1,6 @@
 main {
     display: block;
-    min-height: 90%;
-    height: 90%;
+    height: 100%;
 }
 #menu {
     float: left;
@@ -10,15 +9,17 @@ main {
     background-color: #2B2F3E;
 
 }
+
 #menu h1, #menu ul {
     margin-left: 30px;
 }
 #menu ul li {
 margin-top: 50px;
 }
-/*#menu ul li {
-    background-color: rgb(255,29,37);
-}*/
+#menu ul li:hover {
+    background-color: #FF2F5A;
+}
+
 #menu ul li a {
     color: white;
     text-decoration: none;
@@ -32,4 +33,7 @@ margin-top: 50px;
     width: 80%;
     height: 100%;
     padding: 30px 20px 30px 30px;
+}
+items-app {
+    display: block;
 }

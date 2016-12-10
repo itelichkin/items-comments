@@ -3,10 +3,12 @@ import {Comment} from "../../Models/comment.model";
 @Component({
     moduleId: module.id,
     selector: 'comment-app',
-    templateUrl: 'comment.component.html'
+    templateUrl: 'comment.component.html',
+    styleUrls:['comment.component.css']
 })
 
 export class CommentComponent {
+    @Input() elem: Comment;
 
 
 }

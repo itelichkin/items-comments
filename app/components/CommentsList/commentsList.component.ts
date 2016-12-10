@@ -18,7 +18,7 @@ export class CommentListComponent {
     constructor(private mainService: MainServiceComponent) {
     }
 
-    addComment() {
+    addOneComment() {
         let comment: Comment = new Comment(this.newCommentTitle);
         let item: Item = this.selectedItem;
         this.mainService.addComment(item, comment.message)
