@@ -24,3 +24,14 @@ button {
 div.actions {
     margin-left: auto;
 }
+span.count {
+    color:white;
+    background-color: #27CCC0;
+    border-radius: 12px;
+    width: 30px;
+    height: 15px;
+    display: inline-block;
+    text-align: center;
+    font-size: 12px;
+
+}
