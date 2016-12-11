@@ -51,16 +51,16 @@ var ItemsListComponent = (function () {
             }
         });
     };
-    ItemsListComponent = __decorate([
-        core_1.Component({
-            moduleId: module.id,
-            selector: 'item-list',
-            templateUrl: 'itemList.component.html',
-            styleUrls: ['itemList.component.css']
-        }), 
-        __metadata('design:paramtypes', [mainService_component_1.MainServiceComponent])
-    ], ItemsListComponent);
     return ItemsListComponent;
 }());
+ItemsListComponent = __decorate([
+    core_1.Component({
+        moduleId: module.id,
+        selector: 'item-list',
+        templateUrl: 'itemList.component.html',
+        styleUrls: ['itemList.component.css']
+    }),
+    __metadata("design:paramtypes", [mainService_component_1.MainServiceComponent])
+], ItemsListComponent);
 exports.ItemsListComponent = ItemsListComponent;
 //# sourceMappingURL=itemList.component.js.map

@@ -27,20 +27,20 @@ var CommentListComponent = (function () {
             _this.newCommentTitle = '';
         });
     };
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', item_model_1.Item)
-    ], CommentListComponent.prototype, "selectedItem", void 0);
-    CommentListComponent = __decorate([
-        core_1.Component({
-            moduleId: module.id,
-            selector: 'comment-list',
-            templateUrl: 'commentList.component.html',
-            styleUrls: ['commentList.component.css']
-        }), 
-        __metadata('design:paramtypes', [mainService_component_1.MainServiceComponent])
-    ], CommentListComponent);
     return CommentListComponent;
 }());
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", item_model_1.Item)
+], CommentListComponent.prototype, "selectedItem", void 0);
+CommentListComponent = __decorate([
+    core_1.Component({
+        moduleId: module.id,
+        selector: 'comment-list',
+        templateUrl: 'commentList.component.html',
+        styleUrls: ['commentList.component.css']
+    }),
+    __metadata("design:paramtypes", [mainService_component_1.MainServiceComponent])
+], CommentListComponent);
 exports.CommentListComponent = CommentListComponent;
 //# sourceMappingURL=commentsList.component.js.map

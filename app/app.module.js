@@ -25,49 +25,49 @@ var comment_component_1 = require("./components/Comment/comment.component");
 var AppModule = (function () {
     function AppModule() {
     }
-    AppModule = __decorate([
-        core_1.NgModule({
-            imports: [
-                platform_browser_1.BrowserModule,
-                forms_1.FormsModule,
-                http_1.HttpModule,
-                angular_in_memory_web_api_1.InMemoryWebApiModule.forRoot(ItemsData_1.ItemsData),
-                router_1.RouterModule.forRoot([
-                    {
-                        path: '',
-                        redirectTo: '/home',
-                        pathMatch: 'full'
-                    },
-                    {
-                        path: 'home',
-                        component: items_component_1.ItemsComponent
-                    },
-                    {
-                        path: 'items',
-                        component: itemList_component_1.ItemsListComponent
-                    },
-                    {
-                        path: 'comments',
-                        component: commentsList_component_1.CommentListComponent
-                    }
-                ])
-            ],
-            declarations: [
-                app_component_1.AppComponent,
-                itemList_component_1.ItemsListComponent,
-                item_component_1.ItemComponent,
-                items_component_1.ItemsComponent,
-                commentsList_component_1.CommentListComponent,
-                comment_component_1.CommentComponent
-            ],
-            bootstrap: [app_component_1.AppComponent],
-            providers: [
-                mainService_component_1.MainServiceComponent
-            ]
-        }), 
-        __metadata('design:paramtypes', [])
-    ], AppModule);
     return AppModule;
 }());
+AppModule = __decorate([
+    core_1.NgModule({
+        imports: [
+            platform_browser_1.BrowserModule,
+            forms_1.FormsModule,
+            http_1.HttpModule,
+            angular_in_memory_web_api_1.InMemoryWebApiModule.forRoot(ItemsData_1.ItemsData),
+            router_1.RouterModule.forRoot([
+                {
+                    path: '',
+                    redirectTo: '/home',
+                    pathMatch: 'full'
+                },
+                {
+                    path: 'home',
+                    component: items_component_1.ItemsComponent
+                },
+                {
+                    path: 'items',
+                    component: itemList_component_1.ItemsListComponent
+                },
+                {
+                    path: 'comments',
+                    component: commentsList_component_1.CommentListComponent
+                }
+            ])
+        ],
+        declarations: [
+            app_component_1.AppComponent,
+            itemList_component_1.ItemsListComponent,
+            item_component_1.ItemComponent,
+            items_component_1.ItemsComponent,
+            commentsList_component_1.CommentListComponent,
+            comment_component_1.CommentComponent
+        ],
+        bootstrap: [app_component_1.AppComponent],
+        providers: [
+            mainService_component_1.MainServiceComponent
+        ]
+    }),
+    __metadata("design:paramtypes", [])
+], AppModule);
 exports.AppModule = AppModule;
 //# sourceMappingURL=app.module.js.map

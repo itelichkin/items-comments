@@ -12,16 +12,16 @@ var core_1 = require("@angular/core");
 var ItemsComponent = (function () {
     function ItemsComponent() {
     }
-    ItemsComponent = __decorate([
-        core_1.Component({
-            moduleId: module.id,
-            selector: 'items-app',
-            templateUrl: 'items.component.html',
-            styleUrls: ['items.component.css']
-        }), 
-        __metadata('design:paramtypes', [])
-    ], ItemsComponent);
     return ItemsComponent;
 }());
+ItemsComponent = __decorate([
+    core_1.Component({
+        moduleId: module.id,
+        selector: 'items-app',
+        templateUrl: 'items.component.html',
+        styleUrls: ['items.component.css']
+    }),
+    __metadata("design:paramtypes", [])
+], ItemsComponent);
 exports.ItemsComponent = ItemsComponent;
 //# sourceMappingURL=items.component.js.map

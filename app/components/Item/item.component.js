@@ -21,28 +21,28 @@ var ItemComponent = (function () {
     ItemComponent.prototype.findComment = function () {
         this.findingCommnent.emit(this.item);
     };
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', item_model_1.Item)
-    ], ItemComponent.prototype, "item", void 0);
-    __decorate([
-        core_1.Output(), 
-        __metadata('design:type', Object)
-    ], ItemComponent.prototype, "deleted", void 0);
-    __decorate([
-        core_1.Output(), 
-        __metadata('design:type', Object)
-    ], ItemComponent.prototype, "findingCommnent", void 0);
-    ItemComponent = __decorate([
-        core_1.Component({
-            moduleId: module.id,
-            selector: 'item-app',
-            templateUrl: 'item.component.html',
-            styleUrls: ['item.component.css']
-        }), 
-        __metadata('design:paramtypes', [])
-    ], ItemComponent);
     return ItemComponent;
 }());
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", item_model_1.Item)
+], ItemComponent.prototype, "item", void 0);
+__decorate([
+    core_1.Output(),
+    __metadata("design:type", Object)
+], ItemComponent.prototype, "deleted", void 0);
+__decorate([
+    core_1.Output(),
+    __metadata("design:type", Object)
+], ItemComponent.prototype, "findingCommnent", void 0);
+ItemComponent = __decorate([
+    core_1.Component({
+        moduleId: module.id,
+        selector: 'item-app',
+        templateUrl: 'item.component.html',
+        styleUrls: ['item.component.css']
+    }),
+    __metadata("design:paramtypes", [])
+], ItemComponent);
 exports.ItemComponent = ItemComponent;
 //# sourceMappingURL=item.component.js.map

@@ -11,7 +11,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var item_model_1 = require("../Models/item.model");
 var http_1 = require("@angular/http");
 var core_1 = require("@angular/core");
-require('rxjs/add/operator/toPromise');
+require("rxjs/add/operator/toPromise");
 var MainServiceComponent = (function () {
     function MainServiceComponent(http) {
         this.http = http;
@@ -52,15 +52,15 @@ var MainServiceComponent = (function () {
             .then(function (response) { return response.json().data; })
             .catch(this.handleError);
     };
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', item_model_1.Item)
-    ], MainServiceComponent.prototype, "selectedItem", void 0);
-    MainServiceComponent = __decorate([
-        core_1.Injectable(), 
-        __metadata('design:paramtypes', [http_1.Http])
-    ], MainServiceComponent);
     return MainServiceComponent;
 }());
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", item_model_1.Item)
+], MainServiceComponent.prototype, "selectedItem", void 0);
+MainServiceComponent = __decorate([
+    core_1.Injectable(),
+    __metadata("design:paramtypes", [http_1.Http])
+], MainServiceComponent);
 exports.MainServiceComponent = MainServiceComponent;
 //# sourceMappingURL=mainService.component.js.map

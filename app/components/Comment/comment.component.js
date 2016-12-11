@@ -13,20 +13,20 @@ var comment_model_1 = require("../../Models/comment.model");
 var CommentComponent = (function () {
     function CommentComponent() {
     }
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', comment_model_1.Comment)
-    ], CommentComponent.prototype, "elem", void 0);
-    CommentComponent = __decorate([
-        core_1.Component({
-            moduleId: module.id,
-            selector: 'comment-app',
-            templateUrl: 'comment.component.html',
-            styleUrls: ['comment.component.css']
-        }), 
-        __metadata('design:paramtypes', [])
-    ], CommentComponent);
     return CommentComponent;
 }());
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", comment_model_1.Comment)
+], CommentComponent.prototype, "elem", void 0);
+CommentComponent = __decorate([
+    core_1.Component({
+        moduleId: module.id,
+        selector: 'comment-app',
+        templateUrl: 'comment.component.html',
+        styleUrls: ['comment.component.css']
+    }),
+    __metadata("design:paramtypes", [])
+], CommentComponent);
 exports.CommentComponent = CommentComponent;
 //# sourceMappingURL=comment.component.js.map
