@@ -36,3 +36,7 @@ comment-list {
     display: block;
     padding-bottom: 20px;
 }
+.selected {
+    border-left: 2px solid #FF2F5A !important;
+    color: white;
+}

@@ -8,6 +8,6 @@ import {Component} from "@angular/core";
 })
 
 export class AppComponent {
-    title: 'Hello Angular';
+    title:string = 'Click to Item and you will find Comment';
 
 }

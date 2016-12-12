@@ -22,7 +22,7 @@ main {
     margin-top: 50px;
 }
 
-#menu ul li:hover {
+#menu ul li a:hover {
     background-color: #FF2F5A;
 }
 
@@ -36,9 +36,8 @@ main {
     padding-left: 30px;
 }
 
-#menu ul li.selected {
-    background-color: #BBD8DC !important;
-    color: white;
+a.active {
+    background-color: #FF2F5A;
 }
 
 #items {

@@ -7,7 +7,7 @@
     </form>
 
     <div class="item-list">
-        <item-app *ngFor="let item of items" [item]="item" (deleted)="onItemDelete(item)" (click)="onSelect(item)">
+        <item-app *ngFor="let item of items" [item]="item" (deleted)="onItemDelete(item)" (click)="onSelect(item)" [class.selected]="item === selectedItem">
 
         </item-app>
     </div>
