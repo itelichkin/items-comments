@@ -8,6 +8,6 @@ import {Component} from "@angular/core";
 })
 
 export class AppComponent {
-    title:string = 'Click to Department and you will find Employee';
+    title:string = 'Click to Item and you will find Comment';
 
 }

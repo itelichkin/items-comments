@@ -1,0 +1,16 @@
+<h1>Comments of {{selectedItem.name}}</h1>
+
+<div class="comment">
+    <comment-app *ngFor="let elem of selectedItem.comments" [elem]="elem">
+
+    </comment-app>
+</div>
+
+<form (ngSubmit)="addOneComment()">
+    <div class="image">
+        <i class="image"></i>
+    </div>
+    <textarea name='title' [(ngModel)]="newCommentTitle" placeholder="Write your comment." required></textarea>
+    <button type="submit">Add comment</button>
+
+</form>

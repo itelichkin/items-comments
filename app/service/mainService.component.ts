@@ -1,20 +1,19 @@
-import {Employee} from "../Models/employee.model";
+import {Item} from "../Models/item.model";
 import {Http, Headers} from "@angular/http";
 import {Injectable, Input} from "@angular/core";
 
 import 'rxjs/add/operator/toPromise';
-import {Department} from "../Models/department.model";
+import {Comment} from "../Models/comment.model";
 
 
 @Injectable()
 export class MainServiceComponent {
-    @Input() selectedItem: Employee;
+    @Input() selectedItem: Item;
 
-    employees: Array<Employee> = [];
-    private employeesUrl = 'app/employees';
-    private departmentsUrl = 'app/departments';
+    comments: Array<Comment> = [];
+    private itemsUrl = 'app/items';
     private headers = new Headers({'Content-Type': 'application/json'});
-
+    private headersComment = new Headers({'Content-Type': 'application/json'});
     private handleError(error: any): Promise<any> {
         console.error('An error occurred', error);
         return Promise.reject(error.message || error);
@@ -25,35 +24,37 @@ export class MainServiceComponent {
     }
 
 
-    getDepartments(): Promise<Department[]> {
-        return this.http.get(this.departmentsUrl)
+    getItems(): Promise<Item[]> {
+        return this.http.get(this.itemsUrl)
             .toPromise()
-            .then(response => response.json().data as Department[])
+            .then(response => response.json().data as Item[])
             .catch(this.handleError);
     }
 
 
-    deleteDepartment(id: number): Promise<void> {
-        const url = `${this.departmentsUrl}/${id}`;
+    deleteItem(id: number): Promise<void> {
+        const url = `${this.itemsUrl}/${id}`;
         return this.http.delete(url, {headers: this.headers})
             .toPromise()
-            .then(() => null)
+            .then(()=>null)
             .catch(this.handleError);
     }
 
 
-    create(name: any): Promise<Department> {
+    create(name: any): Promise<Item> {
         return this.http
-            .post(this.departmentsUrl, JSON.stringify({name: name}), {headers: this.headers})
+            .post(this.itemsUrl, JSON.stringify({name: name, comments: this.comments}), {headers: this.headers})
             .toPromise()
             .then(response => response.json().data)
             .catch(this.handleError);
     }
 
-    getEmployees(): Promise<Employee[]> {
-        return this.http.get(this.employeesUrl)
+    addComment(item: Item, comment: any){
+        const url = `${this.itemsUrl}/${item.comments}`;
+        return this.http
+            .post(url, JSON.stringify({message: comment}))
             .toPromise()
-            .then(response => response.json().data as Employee[])
+            .then(response => response.json().data)
             .catch(this.handleError);
     }
 
