@@ -5,20 +5,21 @@ import {FormsModule} from "@angular/forms";
 import {AppComponent} from "./app.component";
 import {MainServiceComponent} from "./service/mainService.component";
 import {RouterModule} from "@angular/router";
-import {ItemsListComponent} from "./components/ItemList/itemList.component";
+import {DepartmentListComponent} from "./components/DepartmentList/deparmentList.component";
 import {ItemsComponent} from "./components/items.component";
-import {ItemComponent} from "./components/Item/item.component";
-import {HttpModule} from "@angular/http";
+import {DepartmentComponent} from "./components/Department/department.component";
+import {HttpModule, JsonpModule} from "@angular/http";
 import {InMemoryWebApiModule} from "angular-in-memory-web-api";
-import {ItemsData} from "./Data/ItemsData";
-import {CommentListComponent} from "./components/CommentsList/commentsList.component";
-import {CommentComponent} from "./components/Comment/comment.component";
+import {ItemsData} from "./Data/DepartmentsData";
+import {EmployeeListComponent} from "./components/EmployeeList/employeeList.component";
+import {CommentComponent} from "./components/Employee/employee.component";
 
 @NgModule({
     imports:[
         BrowserModule,
         FormsModule,
         HttpModule,
+        JsonpModule,
         InMemoryWebApiModule.forRoot(ItemsData),
         RouterModule.forRoot([
             {
@@ -31,22 +32,22 @@ import {CommentComponent} from "./components/Comment/comment.component";
                 component: ItemsComponent
             },
             {
-                path: 'items',
-                component: ItemsListComponent
+                path: 'departments',
+                component: DepartmentListComponent
             },
             {
-                path: 'comments',
-                component: CommentListComponent
+                path: 'employee',
+                component: EmployeeListComponent
             }
 
         ])
     ],
     declarations: [
         AppComponent,
-        ItemsListComponent,
-        ItemComponent,
+        DepartmentListComponent,
+        DepartmentComponent,
         ItemsComponent,
-        CommentListComponent,
+        EmployeeListComponent,
         CommentComponent
     ],
     bootstrap: [AppComponent],

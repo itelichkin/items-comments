@@ -79,7 +79,7 @@ header h1 {
     margin: 0 0 0 10px;
     font-weight: 400;
 }
-item-list {
+department-list {
     display: inline-block;
     width: 100%;
 }
@@ -95,9 +95,9 @@ i.image {
     margin-left: auto;
     margin-right: auto;
 }
-comment-app:nth-child(odd) i.image{
+employee-app:nth-child(odd) i.image{
     background-color: #FF8A00;
 }
-comment-app:nth-child(even) i.image{
+employee-app:nth-child(even) i.image{
     background-color: #47568C;
 }

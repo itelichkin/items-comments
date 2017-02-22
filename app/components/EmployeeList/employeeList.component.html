@@ -1,0 +1,6 @@
+<h1>Employees of {{selectedDepartment.name}}</h1>
+<div >
+
+    <employee-app *ngFor="let employee of departmentEmployee" [employee]="employee">
+    </employee-app>
+</div>
